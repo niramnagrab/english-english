@@ -203,6 +203,12 @@ body {
   color: #ffffff;
   background: #e95959;
 }
+
+.button-container button:hover {
+  opacity: 0.9;
+}
+
+
 .ground-section,
 .home-section {
   background-repeat: no-repeat;
@@ -416,7 +422,7 @@ body {
 }
 
 .text-side a:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 /* .....................slider............. */
@@ -685,6 +691,11 @@ body {
   white-space: nowrap;
 }
 
+.contactus-now .button-container button:hover {
+  opacity: 0.7;
+}
+
+
 .about-us-page,
 .football-tour .text-side {
   background: #5eca7ede;
@@ -790,6 +801,10 @@ body {
   border-radius: 10px;
   height: unset;
   padding: 16px 48px;
+}
+
+.section-between-text .button-container button:hover {
+  opacity: 0.9;
 }
 
 .summer-camp-page .text-side p {
