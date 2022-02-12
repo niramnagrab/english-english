@@ -958,10 +958,11 @@ opacity: 0.9;
   .text-side h2 {
     font-size: 30px;
     line-height: 46px;
+    text-align: center;
   }
 
   .text-side p {
-    font-size: 30px !important;
+    font-size: 25px !important;
     line-height: 35px;
   }
 
@@ -978,7 +979,7 @@ opacity: 0.9;
   } */
 
   .section-between-text {
-    padding: 150px 40px;
+    padding: 0;
   }
 }
 
@@ -1000,7 +1001,8 @@ opacity: 0.9;
     margin: auto;
     position: unset;
     transform: unset;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   .home-whats {
@@ -1071,7 +1073,7 @@ opacity: 0.9;
   .text-side a {
     line-height: 48px;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .text-side {
@@ -1110,6 +1112,10 @@ opacity: 0.9;
   .contact-us-container {
     width: 90%;
   }
+
+  .contact-us-container p {
+    text-align: center;
+  }
   .home-whats p {
     font-size: 30px;
   }
@@ -1122,5 +1128,9 @@ opacity: 0.9;
   }
   .section-between-text span {
     white-space: unset;
+  }
+
+  .image-side img {
+    height: 55vh;
   }
 }
