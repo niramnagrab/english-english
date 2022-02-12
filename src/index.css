@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:");
 
-h1 { font-family: Nunito; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Nunito; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Nunito; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Nunito; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Nunito; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+h1 { font-family: Nunito; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;} h3 { font-family: Nunito; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700;} p { font-family: Nunito; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Nunito; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Nunito; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
 
 
 body {
@@ -33,7 +33,7 @@ body {
 
 .nav-container ul li {
   list-style: none;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 23.48px;
   padding-right: 24px;
   font-weight: 700;
@@ -182,7 +182,7 @@ body {
   margin: auto;
   font-weight: 500;
   font-size: 16px;
-  line-height: 144.4%;
+  /* line-height: 144.4%; */
   text-align: left;
   color: #000000;
   outline: none;
@@ -198,8 +198,8 @@ body {
   border: none;
   cursor: pointer;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 144.4%;
+  font-size: 20px;
+  /* line-height: 144.4%; */
   color: #ffffff;
   background: #e95959;
 }
@@ -281,7 +281,7 @@ body {
   font-weight: bold;
   font-size: 30px;
   line-height: 35px;
-  text-align: center;
+  text-align: left;
   color: #000000;
 }
 
@@ -300,14 +300,14 @@ body {
   font-weight: 700;
   font-size: 45px;
   margin: 0;
-  line-height: 144.4%;
+  /* line-height: 144.4%; */
 }
 
 .home-text h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
-  line-height: 144.4%;
+  /* line-height: 144.4%; */
   color: #000000;
   margin: 0;
   text-align: end;
@@ -398,7 +398,7 @@ body {
 
 .text-side h2 {
   font-size: 40px;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   margin-top: 12px 0;
   line-height: 60px;
@@ -566,7 +566,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 144.4%;
+  /* line-height: 144.4%; */
   text-align: center;
   color: #ffffff;
   opacity: 0.5;
@@ -663,15 +663,19 @@ body {
 
 .online-english .text-side button {
   padding: 16px 24px;
-    border-radius: 8px;
-    width: 72%;
-  background: #e95959;
-  border: none;
-  /* border-radius: 16px; */
-  font-size: 28px;
-  font-weight: bold;
-  color: white;
-  /* margin-top: 100px; */
+  border-radius: 8px;
+  width: 50%;
+border: none;
+cursor: pointer;
+font-weight: bold;
+font-size: 20px;
+/* line-height: 144.4%; */
+color: #ffffff;
+background: #e95959;
+}
+
+.online-english .text-side button:hover {
+opacity: 0.9;
 }
 
 .contactus-now {
@@ -713,6 +717,7 @@ body {
 .why-choose-us h1 {
   text-align: center;
   padding: 50px 0;
+  font-size: 40px;
   display: flex;
   justify-content: center;
 }
@@ -721,11 +726,11 @@ body {
   margin: 0 12px;
 }
 
-.why-choose-us h1 hr {
+/* .why-choose-us h1 hr {
   width: 35px;
   height: 3px;
   background: green;
-}
+} */
 
 .advantage-contaner {
   width: 90%;
@@ -764,6 +769,7 @@ body {
 
 .start-game h1 {
   padding: 38px 12px;
+  font-size: 40px;
 }
 
 .game-step-container {
