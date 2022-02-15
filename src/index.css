@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:");
 
-h1 { font-family: Nunito; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;} h3 { font-family: Nunito; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700;} p { font-family: Nunito; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Nunito; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Nunito; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+h1 { font-family: Nunito; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;} h3 { font-family: Nunito; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;} p { font-family: Nunito; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Nunito; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Nunito; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
 
 
 body {
@@ -163,7 +163,7 @@ body {
 
 
 .contact-us-container {
-  width: 450px;
+  width: 400px;
   background: #ffffff;
   border: 1px solid #eaeaea;
   box-sizing: border-box;
@@ -173,7 +173,7 @@ body {
   flex-direction: column;
   padding: 15px 35px;
   margin-bottom: -116px;
-  margin-right: -45px;
+  margin-right: -35px;
 }
 
 
@@ -248,7 +248,7 @@ body {
   flex-direction: column;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 46px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -280,7 +280,7 @@ body {
 .contact-us-container p {
   font-weight: bold;
   font-size: 30px;
-  line-height: 35px;
+  line-height: 25px;
   text-align: left;
   color: #000000;
 }
@@ -398,7 +398,7 @@ body {
 
 .text-side h2 {
   font-size: 40px;
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   margin-top: 12px 0;
   line-height: 60px;
@@ -407,7 +407,7 @@ body {
 .text-side p {
   font-size: 24px;
   line-height: 40px;
-  text-align: justify;
+  text-align: center;
   font-weight: 500;
   margin: 12px 0;
 }
@@ -610,7 +610,7 @@ body {
 
 .football-trip .text-side p {
   color: #e95959;
-  text-align: center;
+  text-align: left;
 }
 
 .text-red {
@@ -751,6 +751,7 @@ opacity: 0.9;
   align-items: center;
   margin-bottom: 46px;
   text-align: center;
+  border-radius: 8px;
 }
 
 .advantage:hover {
@@ -849,9 +850,9 @@ opacity: 0.9;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0px 14px;
+  /* padding: 0px 14px; */
   box-sizing: border-box;
-  margin: 14px;
+  /* margin: 14px; */
 }
 
 .step-circl {
@@ -883,7 +884,7 @@ opacity: 0.9;
 }
 
 .step-item h2 {
-  line-height: 48px;
+  /* line-height: 48px; */
 }
 
 .step-item p {
@@ -980,6 +981,7 @@ opacity: 0.9;
 
   .section-between-text {
     padding: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -1017,7 +1019,7 @@ opacity: 0.9;
   .experimental-trip .text-side,
   .football-trip .text-side {
     text-align: center;
-    padding: 150px 40px;
+    /* padding: 150px 40px; */
   }
 
   .whats-app img{
@@ -1061,6 +1063,7 @@ opacity: 0.9;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    /* height: 63vh; */
   }
 
   .image-side,
@@ -1121,7 +1124,7 @@ opacity: 0.9;
   }
 
   .text-side {
-    padding: 0 20px;
+    padding: 20px;
   }
   .text-side p {
     padding: 0;
@@ -1130,7 +1133,53 @@ opacity: 0.9;
     white-space: unset;
   }
 
-  .image-side img {
+  /* .image-side img {
     height: 55vh;
+  } */
+
+  .top-level .text-side p {
+    text-align: center !important;
+    padding: 40px;
+  }
+
+  .football-team .text-side {
+    padding: 20px;
+  }
+
+  .experimental-trip .text-side h3 {
+    font-size: 2.5rem;
+  }
+
+  .online-english .text-side button {
+    width: 80%;
+  }
+
+  .online-english .text-side p {
+    text-align: center;
+  }
+
+  .step-item {
+    width: 100%;
+  }
+
+  .advantage p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .text-image-container {
+    height: auto;
+  }
+
+  .text-side p {
+    text-align: center;
+  }
+
+  .football-trip .text-side p {
+    text-align: center;
+  }
+
+  .summer-camp-page .text-side p {
+    text-align: center;
   }
 }
