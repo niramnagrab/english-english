@@ -8,38 +8,38 @@ import includeIcon6 from "../../statics/images/icons/include-icon-6.png"
 import includeIcon7 from "../../statics/images/icons/include-icon-7.png"
 import includeIcon8 from "../../statics/images/icons/include-icon-8.png"
 
-const ADVANTAGE = [
+const INCLUDED_IN_TOUR = [
   {
     icon: includeIcon1,
-    heading: "Billingual on-site assistance",
+    heading: "include_heading_1",
   },
   {
     icon: includeIcon2,
-    heading: "Museum and restaurant reservation",
+    heading: "include_heading_2",
   },
   {
     icon: includeIcon3,
-    heading: "Exclusive match tickets",
+    heading: "include_heading_3",
   },
   {
     icon: includeIcon4,
-    heading: "Behind the scenes stadium tours",
+    heading: "include_heading_4",
   },
   {
     icon: includeIcon5,
-    heading: "Top level coaching",
+    heading: "include_heading_5",
   },
   {
     icon: includeIcon6,
-    heading: "Guided city tours",
+    heading: "include_heading_6",
   },
   {
     icon: includeIcon7,
-    heading: "Friendly matches with local teams",
+    heading: "include_heading_7",
   },
   {
     icon: includeIcon8,
-    heading: "One-to-one feedback ",
+    heading: "include_heading_8",
   },
 ]
 
@@ -48,12 +48,12 @@ function InCludedInTour({ t }) {
     <div className="why-choose-us">
       <h1>Included in your tour</h1>
       <div className="advantage-contaner">
-        {ADVANTAGE.map((item, key) => (
+        {INCLUDED_IN_TOUR.map((item, key) => (
           <div key={key} className="advantage-new">
             <span>
               <img src={item.icon} />
             </span>
-            <h3>{item.heading}</h3>
+            <h3>{t(item.heading)}</h3>
           </div>
         ))}
       </div>

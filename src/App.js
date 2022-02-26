@@ -18,7 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header t={t} />
-      <WhatsApp />
+      <WhatsApp t={t} />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home t={t} />} />

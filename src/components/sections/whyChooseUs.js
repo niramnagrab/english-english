@@ -9,42 +9,42 @@ import choose5 from '../../statics/images/icons/choose-5.svg'
 const ADVANTAGE = [
   {
     icon : choose1,
-    heading : "Professionally developed system",
-    description : "A selective team of experienced teachers and qualified football coaches have developed the course content"
+    heading : "advantage_heading_1",
+    description : "advantage_description_1"
   },
   {
     icon : choose2,
-    heading : "Engagement in the online classroom",
-    description : "The context of football in an engaging and motivating enviroment encourages our students to achieve faster results"
+    heading : "advantage_heading_2",
+    description : "advantage_description_2"
   },
   {
     icon : choose3,
-    heading : "Effective methods",
-    description : "Our method focuses on our student's ability and confidence with spoken English, we apply a system of repetition and interactive, visual activites"
+    heading : "advantage_heading_3",
+    description : "advantage_description_3"
   },
   {
     icon : choose4,
-    heading : "Selective team of teachers",
-    description : "We have a talented team of native, qualified teachers who create energy and fun in the online classroom"
+    heading : "advantage_heading_4",
+    description : "advantage_description_4"
   },
   {
     icon : choose5,
-    heading : "Personalised service",
-    description : "Our selective team are here to personally respond and look after you throughout the process"
+    heading : "advantage_heading_5",
+    description : "advantage_description_5"
   }
 ]
 
 function WhyChooseUs({t}) {
   return (
     <div className="why-choose-us">
-      <h1><span><hr /></span>Why choose us <span><hr  /></span></h1>
+      <h1><span><hr /></span>{t('why_choose_us')} <span><hr  /></span></h1>
       
       <div className="advantage-contaner">
       {ADVANTAGE.map((item, key)=>(
         <div key={key} className="advantage">
             <img src={item.icon} />
-            <h2>{item.heading}</h2>
-            <p>{item.description}</p>
+            <h2>{t(item.heading)}</h2>
+            <p>{t(item.description)}</p>
         </div>)
       )
       }
