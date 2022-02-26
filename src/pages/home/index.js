@@ -7,59 +7,62 @@ import whatsapp from "../../statics/images/whatsapp.png"
 import learnByFootball from "../../statics/images/learn-through-football.png"
 import footBallTour from "../../statics/images/football-tour.png"
 import camp from "../../statics/images/camp.png"
+import Button from "../../layout/buttons"
 
 function Home({ t }) {
   return (
     <div className="home">
       <HomeSection t={t} Hero />
       <div class="section-between-text pos-rel home-whats">
-        <p>
-          English and football together are the two complementary keys that
-          spark conversations between strangers, create communities and unite
-          nationalities
-        </p>
-        
+        <p>{t("english_and_football_together")}</p>
       </div>
       <TextImageContainer
         t={t}
         image={learnByFootball}
         className="learn-english"
-        textPortion="learn_english_text"
-      />
+      >
+        <h2>{t("learn_english_through_football")}</h2>
+        <p>{t("online_english_classes_delevered")}</p>
+        <a>{t("learn_more")}</a>
+      </TextImageContainer>
 
       <div class="section-between-text courses">
         <h2 class="text-content">
-          <span>Online Classes </span>
-          <span>Summer Camps</span>
-          <span>Football Tours</span>
+          <span>{t("online_classes")} </span>
+          <span>{t("summer_camps")}</span>
+          <span>{t("football_tours")}</span>
         </h2>
       </div>
 
-      <TextImageContainer
-        t={t}
-        image={footBallTour}
-        className="football-tour"
-        textPortion="football_tour_text"
-      />
+      <TextImageContainer t={t} image={footBallTour} className="football-tour">
+        <h2>{t("we_plan_your_football_tour")}</h2>
+        <p>{t("football_tour_text")}</p>
+        <Button buttonText={t("request_digital_brochure")} />
+      </TextImageContainer>
+
       <div class="section-between-text">
-        <p>Experiential learning through a sport that unites millions</p>
+        <p>{t("experiential_learning_through_sport")}</p>
       </div>
-      <TextImageContainer
-        t={t}
-        image={camp}
-        className="summer-camp"
-        textPortion="summer_camp_text"
-      />
+
+      <TextImageContainer t={t} image={camp} className="summer-camp">
+        <h2>{t("summer_camp_text_h2")}</h2>
+        <p>{t("summer_camp_text")}</p>
+        <a>{t("check_dates")}</a>
+      </TextImageContainer>
+
       <div class="section-between-text">
-        <p>Experiential learning through a sport that unites millions</p>
+        <p>{t("experiential_learning_through_sport")}</p>
       </div>
 
       <TextImageContainer
         t={t}
         image={footBallTour}
         className="football-tour football-coach"
-        textPortion="football_coaching_text"
-      />
+      >
+        <h2>{t("football_coaching_text_h2")}</h2>
+        <p>{t("football_coaching_text_p")}</p>
+      </TextImageContainer>
+      
       <Testimonials t={t} />
     </div>
   )

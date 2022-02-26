@@ -1,7 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:");
 
-h1 { font-family: Nunito; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;} h3 { font-family: Nunito; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;} p { font-family: Nunito; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Nunito; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Nunito; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
-
+h1 {
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+}
+h3 {
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+}
+p {
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+blockquote {
+  font-family: Nunito;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+pre {
+  font-family: Nunito;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
 
 body {
   margin: 0;
@@ -51,7 +87,6 @@ body {
   /* text-decoration: underline; */
 }
 
-
 .logo-container {
   display: flex;
 }
@@ -83,7 +118,7 @@ body {
 }
 
 .grey {
-  background: #B5ACAC6E;
+  background: #b5acac6e;
 }
 
 .hero {
@@ -161,7 +196,6 @@ body {
   /* margin-top: 70px; */
 }
 
-
 .contact-us-container {
   width: 400px;
   background: #ffffff;
@@ -176,13 +210,12 @@ body {
   margin-right: -35px;
 }
 
-
 .contact-us-container input {
   width: 100%;
   margin: auto;
   font-weight: 500;
   font-size: 16px;
-  /* line-height: 144.4%; */
+  line-height: 144.4%;
   text-align: left;
   color: #000000;
   outline: none;
@@ -194,12 +227,12 @@ body {
 
 .button-container button {
   padding: 16px 24px;
-    border-radius: 8px;
   border: none;
   cursor: pointer;
+  width: 75%;
   font-weight: bold;
   font-size: 20px;
-  /* line-height: 144.4%; */
+  line-height: 144.4%;
   color: #ffffff;
   background: #e95959;
 }
@@ -207,7 +240,6 @@ body {
 .button-container button:hover {
   opacity: 0.9;
 }
-
 
 .ground-section,
 .home-section {
@@ -325,14 +357,37 @@ body {
 .whats-app {
   position: fixed;
   top: 50%;
-  right: 0px;
+  right: 16px;
   z-index: 1;
   transform: translate(0, 0);
 }
 
-.whats-app img{
+.msg {
+  padding: 0px 16px;
+  line-height: 1.6;
+  font-size: 15px;
+  background-color: rgb(37, 211, 102);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 0px 10px;
+  order: 1;
+  opacity: 0;
+  left: -90px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.whats-app img {
   width: 50px;
   height: 50px;
+}
+
+.whats-app:hover .msg {
+  left: -150px;
+  top: 23%;
+  opacity: 1;
+  transition: all 0.5s;
+  visibility: visible;
 }
 
 .whats-app img:hover {
@@ -398,18 +453,24 @@ body {
 
 .text-side h2 {
   font-size: 40px;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
-  margin-top: 12px 0;
+  margin-top: 12px;
   line-height: 60px;
+}
+
+.about-us-page .text-side h2 {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .text-side p {
   font-size: 24px;
   line-height: 40px;
-  text-align: center;
   font-weight: 500;
   margin: 12px 0;
+  text-align: justify;
 }
 
 .text-side a {
@@ -462,12 +523,12 @@ body {
   font-size: 8px;
 }
 
-.barcodes img{
+.barcodes img {
   width: 100%;
 }
 
 .barcodes img:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
 
 .home-hero {
@@ -595,9 +656,13 @@ body {
 }
 
 .experimental-trip,
-.football-trip  {
+.football-trip {
   text-align: left;
   background-color: #aad9fe;
+}
+
+.experimental-trip {
+  flex-direction: row-reverse;
 }
 
 .experimental-trip .text-side h3 {
@@ -623,6 +688,10 @@ body {
   flex-direction: row-reverse;
 }
 
+.top-level button {
+  background-color: black !important;
+}
+
 .football-team .text-side {
   padding: 123px 90px;
 }
@@ -642,7 +711,6 @@ body {
 .football-tour {
   flex-direction: row-reverse;
 }
-
 
 .online-english {
   background: #5eca7e;
@@ -664,18 +732,18 @@ body {
 .online-english .text-side button {
   padding: 16px 24px;
   border-radius: 8px;
-  width: 50%;
-border: none;
-cursor: pointer;
-font-weight: bold;
-font-size: 20px;
-/* line-height: 144.4%; */
-color: #ffffff;
-background: #e95959;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  /* line-height: 144.4%; */
+  color: #ffffff;
+  background: #e95959;
 }
 
 .online-english .text-side button:hover {
-opacity: 0.9;
+  opacity: 0.9;
 }
 
 .contactus-now {
@@ -698,7 +766,6 @@ opacity: 0.9;
 .contactus-now .button-container button:hover {
   opacity: 0.7;
 }
-
 
 .about-us-page,
 .football-tour .text-side {
@@ -755,7 +822,7 @@ opacity: 0.9;
 }
 
 .advantage:hover {
-  background: #5ECA7F;;
+  background: #5eca7f;
 }
 
 .advantage img {
@@ -781,10 +848,13 @@ opacity: 0.9;
 }
 
 .summer-camp-page {
- background: #72d08f;
+  background: #72d08f;
 }
 
 .summer-camp-page .text-side {
+  text-align: center;
+}
+.summer-camp-page .text-side h2 {
   text-align: center;
 }
 
@@ -929,7 +999,7 @@ opacity: 0.9;
   }
 
   .nav-options.active {
-    background: #c1eafc;;
+    background: #c1eafc;
     top: 60px;
     opacity: 1;
     transition: all 0.5s ease;
@@ -1022,7 +1092,7 @@ opacity: 0.9;
     /* padding: 150px 40px; */
   }
 
-  .whats-app img{
+  .whats-app img {
     width: 70px;
     height: 70px;
   }
@@ -1108,7 +1178,7 @@ opacity: 0.9;
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .home-whats {
     padding: 20px !important;
   }

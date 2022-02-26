@@ -10,27 +10,27 @@ const REVIEWS = [
   {
     name: "Mo Chou",
     label: "Beijing",
-    desc: "Ben is a fantastic teacher. You can see his passion for football and English in his classes. They are always fun, dynamic, and engaging.",
+    desc: "description_1",
     image: chou,
   },
   {
     name: "Nian Zhen",
     label: "Hangzhou",
-    desc: "Carlos is an excellent coach and teacher. He does everything with passion and energy. My children have been studying with him for 5 years, and I have seen an incredible improvement in their confidence and ability with English.",
+    desc: "description_2",
     image: nian,
   },
   {
     name: "Maria",
     label: "Shanghai",
-    desc: "Joely always goes over and above, with so much interest in her students. She tries to make us get the most we possibly can from the course. If I had to rate her from 0-10, I would give her a 10. Excellent!",
+    desc: "description_3",
     image: maria,
   },
 ]
 
-const Testimonials = () => {
+const Testimonials = ({t}) => {
   return (
     <div className="review-slider-container">
-      <h1>Testimonials</h1>
+      <h1>{t('testimonials')}</h1>
       <Carousel
         showArrows={true}
         infiniteLoop={true}
@@ -45,7 +45,7 @@ const Testimonials = () => {
             <div className="myCarousel">
               <h3>{item.name}</h3>
               <h4>{item.label}</h4>
-              <p>{item.desc}</p>
+              <p>{t(item.desc)}</p>
               <QuoteRight />
             </div>
           </div>

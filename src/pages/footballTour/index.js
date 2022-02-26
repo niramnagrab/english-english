@@ -13,37 +13,45 @@ function FootballTour({ t }) {
         t={t}
         image={footballGround}
         className="hero football-trip"
-        textPortion="oganizing_trip"
-      />
+      >
+        <h2>{t("We_take_care_organising_trip")}</h2>
+        <p>{t("oganizing_trip")}</p>
+      </TextImageContainer>
       <div class="section-between-text">
         <p>
-          We specialise in tours in <span className="text-red">Valencia</span>{" "}
-          and the <span className="text-red"> UK</span>
+          {t("We_specialise_in_tours_in")}{" "}
+          <span className="text-red">{t("valencia")}</span> {t("and_the")}{" "}
+          <span className="text-red"> UK</span>
         </p>
       </div>
-      <TextImageContainer
-        t={t}
-        image={footballTeam}
-        className="football-team"
-        textPortion="football_team_text"
-      />
+      <TextImageContainer t={t} image={footballTeam} className="football-team">
+        <h2>
+          <a>{t("click_here")}</a> {t("football_team_text")}
+        </h2>
+      </TextImageContainer>
       <div class="section-between-text">
         <p>
-          We specialise in tours in <span className="text-red">Valencia</span>{" "}
-          and the <span className="text-red"> UK</span>
+          {t("We_specialise_in_tours_in")}{" "}
+          <span className="text-red">{t("valencia")}</span> {t("and_the")}{" "}
+          <span className="text-red"> UK</span>
         </p>
       </div>
       <div className="ground-slider">
-      <ImageSlider t={t} />
+        <ImageSlider t={t} />
       </div>
       <InCludedInTour t={t} />
       <TextImageContainer
         t={t}
         className="experimental-trip"
-        textPortion="experimental_trip"
-        textPortion2="experimental_trip2"
-       
-      />
+        textPortion={`<h3>${t("experimental_trip")}</h3>`}
+        textPortion2Class="bg-red"
+      >
+        <h3>
+          {t("visit_major_cities")}{" "}
+          <span class="text-white">{t("visit_major_cities_cities")}</span>{" "}
+          {t("and")} <span class="text-white"> {t("valencia")}</span>
+        </h3>
+      </TextImageContainer>
     </div>
   )
 }
