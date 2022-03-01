@@ -516,7 +516,7 @@ opacity: 0.8;
 }
 
 
-.online {
+#online {
   font-size: 80px !important;
   color: white;
 }
@@ -654,7 +654,7 @@ opacity: 0.8;
 .footer span {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   /* line-height: 144.4%; */
   text-align: center;
   color: #ffffff;
@@ -725,7 +725,7 @@ opacity: 0.8;
 }
 
 .football-team .text-side {
-  padding: 123px 90px;
+  padding: 50px 90px;
 }
 .football-coach p,
 .summer-camp p,
@@ -1035,6 +1035,11 @@ input[type=number] {
     /* margin-top: 60px; */
   }
 
+
+  .dropbtn {
+    font-size: 21px;
+  }
+
   .toggle-menu {
     display: block;
   }
@@ -1060,12 +1065,14 @@ input[type=number] {
   }
 
   .nav-options.active {
-    background: #c1eafc;
-    top: 60px;
+    background: #aad9fe;
+    top: 0px;
+    height: 100vh;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
     align-content: center;
+    padding-top: 150px;
   }
 
   .nav-container ul {
@@ -1149,19 +1156,27 @@ input[type=number] {
   .hero .home-text,
   .hero .text-side {
     margin-top: 100px;
-    background: rgb(255 255 255 / 30%);
+    /* background: rgb(255 255 255 / 30%); */
+  }
+
+  .background-whitish {
+    filter: opacity(0.8);
   }
 
   .experimental-trip .text-side,
   .football-trip .text-side {
     text-align: center;
-    /* padding: 150px 40px; */
+    padding: 55px 30px;
   }
 
   .whats-app img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
+
+.whats-app {
+  top: 91%;
+}
 
   .text-side p {
     padding: 0 26px;
@@ -1190,9 +1205,7 @@ input[type=number] {
   }
 
   .footer {
-
-    padding: 35px 0px;
-
+    padding: 45px 0px;
   }
 
   .social-item li {
@@ -1245,7 +1258,7 @@ input[type=number] {
     padding: 30px !important;
   }
   .courses .text-content span {
-    font-size: 30px;
+    font-size: 35px;
     padding-bottom: 16px;
   }
   .courses .text-content {
@@ -1299,7 +1312,7 @@ input[type=number] {
     width: 100%;
   }
 
-  .online {
+  #online {
     font-size: 80px !important;
     color: white;
   }
@@ -1316,9 +1329,9 @@ input[type=number] {
     padding: 40px;
   }
 
-  .football-team .text-side {
+  /* .football-team .text-side {
     padding: 20px;
-  }
+  } */
 
   .experimental-trip .text-side h3 {
     font-size: 2.5rem;

@@ -16,7 +16,7 @@ function EnglishThroughFootball({ t }) {
         className="hero online-english"
       >
         <h1>{t("learn_english_online")}</h1>
-        <p className="online">{t("learn_english_online_2")}</p>
+        <p id="online">{t("learn_english_online_2")}</p>
         <p>{t("online_english_text")}</p>
         <button>{t("free_demo_class")}</button>
       </TextImageContainer>

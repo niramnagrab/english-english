@@ -75,7 +75,7 @@ function ImageSlider({ t, Hero }) {
       {Hero
         ? HOME_SLIDERIMG.map((item) => (
             <div
-              className="hero home-section"
+              className="hero home-section background-whitish"
               style={{ backgroundImage: `url(${item.image})` }}
             >
               <div className="home-text">
