@@ -244,7 +244,7 @@ button {
 }
 
 .button-container button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .ground-section,
@@ -720,6 +720,10 @@ opacity: 0.8;
   background-color: black !important;
 }
 
+.top-level button:hover {
+opacity: 0.8;
+}
+
 .football-team .text-side {
   padding: 123px 90px;
 }
@@ -774,7 +778,7 @@ opacity: 0.8;
 }
 
 .online-english .text-side button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .contactus-now {
@@ -795,7 +799,7 @@ opacity: 0.8;
 }
 
 .contactus-now .button-container button:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .about-us-page,
@@ -916,7 +920,7 @@ opacity: 0.8;
 }
 
 .section-between-text .button-container button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .summer-camp-page .text-side p {
