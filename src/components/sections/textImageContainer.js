@@ -1,15 +1,17 @@
 import React from "react"
 import Button from "../../layout/buttons"
 
-function TextImageContainer({
-  t,
-  image,
-  textPortion,
-  textPortion2,
-  className,
-  image2,
-  button,
-}) {
+function TextImageContainer(props) {
+  const {
+    t,
+    image,
+    textPortion,
+    textPortion2,
+    className,
+    image2,
+    button,
+    textPortion2Class,
+  } = props
   return (
     <div class={`text-image-container ${className}`}>
       {image && (
@@ -24,13 +26,6 @@ function TextImageContainer({
         </div>
       )}
 
-      {textPortion2 && (
-        <div
-          class="text-side bg-red"
-          dangerouslySetInnerHTML={{ __html: t(textPortion2) }}
-        />
-      )}
-
       {textPortion && (
         <div
           class="text-side"
@@ -38,6 +33,20 @@ function TextImageContainer({
         />
       )}
 
+      {textPortion2 && (
+        <div
+          class="text-side bg-red"
+          dangerouslySetInnerHTML={{ __html: t(textPortion2) }}
+        />
+      )}
+
+      {props.children && (
+        <div
+          className={`text-side ${textPortion2Class ? textPortion2Class : ""}`}
+        >
+          {props.children}
+        </div>
+      )}
       {button && <Button buttonText={button} />}
     </div>
   )

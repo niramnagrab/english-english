@@ -3,30 +3,30 @@ import React from "react"
 const STEP = [
   {
     number : "1",
-    heading : "Register",
-    description : "Follow the link below and register your details to request a trial class"
+    heading : "step_heading_1",
+    description : "step_description_1"
   },
   {
     number : "2",
-    heading : "We contact you",
-    description : "Your dedicated course advisor will promptly contact you directly via WhatsApp to request more information and organise the time of the trial class"
+    heading : "step_heading_2",
+    description : "step_description_2"
   },
   {
     number : "3",
-    heading : "Download Zoom",
-    description : "Download the Zoom application on your preferred device.  We will also be using this application for your free trial lesson"
+    heading : "step_heading_3",
+    description : "step_description_3"
   },
   {
     number : "4",
-    heading : "We allocate the teams",
-    description : "After the trial class, we will assign a level and allocate the perfect group based on age and level"
+    heading : "step_heading_4",
+    description : "step_description_4"
   }
 ]
 
 function Steps({t}) {
   return (
     <div className="start-game">
-      <h1>Get started with these 4 simple steps</h1>
+      <h1>{t('get_started_with_these_steps')}</h1>
       
       <div className="game-step-container">
       {STEP.map((item, key)=>(
@@ -34,12 +34,10 @@ function Steps({t}) {
            <div class="step-circl">
                <span>{item.number}</span>
            </div>
-       <h2>{item.heading}</h2>
-       <p>{item.description}</p>
+       <h2>{t(item.heading)}</h2>
+       <p>{t(item.description)}</p>
    </div>
-        )
-      )
-      }
+      ))}
       </div>
      
     </div>

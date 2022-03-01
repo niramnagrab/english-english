@@ -18,17 +18,17 @@ function Footer({ t }) {
                 <li><a href="#"><TwitterWithCircle /></a></li>
             </ul>
             <ul class="social-item">
-                <li><Link to="learn" href="#">English Through Football</Link></li>
-                <li><Link to="tour">Football Tours</Link></li>
-                <li><Link to="summer-camp">English Summer camps</Link></li>
-                <li><Link to="about">About us</Link></li>
+                <li><Link to="learn" href="#">{t('english_through_football')}</Link></li>
+                <li><Link to="tour">{t("football_tours")}</Link></li>
+                <li><Link to="summer-camp">{t('english_summer_camps')}</Link></li>
+                <li><Link to="about">{t('about_us')}</Link></li>
             </ul>
             <hr class="footer-hori" />
-            <span>Copyright. SP Sports Academy. All Rights Reserved</span>
+            <span>{t('copyrights')}</span>
         </div>
         <div className="barcodes">
           <img src={barcode}/>
-          <p>Add us on WeChat</p>
+          <p>{t('wechat_us')}</p>
         </div>
     </div>
 </footer>

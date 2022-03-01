@@ -10,12 +10,12 @@ const languages = [
   },
   {
     code: "es",
-    name: "Spanish",
+    name: "Español",
     countery_code: "es",
   },
   {
     code: "cn",
-    name: "Chinese",
+    name: "中文",
     countery_code: "cn",
   }
 ]

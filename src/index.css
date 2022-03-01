@@ -1,11 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:");
 
-h1 { font-family: Nunito; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700;} h3 { font-family: Nunito; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700;} p { font-family: Nunito; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Nunito; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Nunito; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
-
+h1 {
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+}
+h3 {
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+}
+p {
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+blockquote {
+  font-family: Nunito;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+pre {
+  font-family: Nunito;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
 
 body {
   margin: 0;
   padding: 0;
+  font-family: "Nunito";
+}
+
+button {
   font-family: "Nunito";
 }
 
@@ -34,7 +74,7 @@ body {
 .nav-container ul li {
   list-style: none;
   font-size: 18px;
-  line-height: 23.48px;
+  line-height: 25px;
   padding-right: 24px;
   font-weight: 700;
 }
@@ -42,7 +82,7 @@ body {
 .nav-container ul li a {
   color: #ffffff;
   text-decoration: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .current a,
@@ -50,7 +90,6 @@ body {
   color: #e95959 !important;
   /* text-decoration: underline; */
 }
-
 
 .logo-container {
   display: flex;
@@ -83,7 +122,7 @@ body {
 }
 
 .grey {
-  background: #B5ACAC6E;
+  background: #b5acac6e;
 }
 
 .hero {
@@ -111,7 +150,7 @@ body {
   align-items: center;
   font-weight: bold;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 30px;
 }
 
 /* .dropbtn:hover,
@@ -128,7 +167,7 @@ body {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 130px;
+  min-width: 115px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -161,7 +200,6 @@ body {
   /* margin-top: 70px; */
 }
 
-
 .contact-us-container {
   width: 400px;
   background: #ffffff;
@@ -175,7 +213,6 @@ body {
   margin-bottom: -116px;
   margin-right: -35px;
 }
-
 
 .contact-us-container input {
   width: 100%;
@@ -193,11 +230,13 @@ body {
 }
 
 .button-container button {
-  padding: 16px 24px;
-    border-radius: 8px;
+  padding: 12px 20px;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
+  /* width: 75%; */
   font-weight: bold;
+  margin-top: 20px;
   font-size: 20px;
   /* line-height: 144.4%; */
   color: #ffffff;
@@ -207,7 +246,6 @@ body {
 .button-container button:hover {
   opacity: 0.9;
 }
-
 
 .ground-section,
 .home-section {
@@ -266,9 +304,10 @@ body {
 }
 
 .ground-section .ground-text {
-  background: #4f50549e;
+  background: #b8b8b89e;
   position: absolute;
   bottom: 0;
+  padding: 0px 15px;
   /* font-size: 30px; */
   font-weight: 900;
   text-align: center;
@@ -279,8 +318,8 @@ body {
 
 .contact-us-container p {
   font-weight: bold;
-  font-size: 30px;
-  line-height: 25px;
+  font-size: 29px;
+  line-height: 30px;
   text-align: left;
   color: #000000;
 }
@@ -297,8 +336,8 @@ body {
 .home-text h2,
 .home-text span {
   font-style: normal;
-  font-weight: 700;
-  font-size: 45px;
+  font-weight: bolder;
+  font-size: 50px;
   margin: 0;
   /* line-height: 144.4%; */
 }
@@ -330,9 +369,32 @@ body {
   transform: translate(0, 0);
 }
 
-.whats-app img{
+.msg {
+  padding: 0px 16px;
+  line-height: 1.6;
+  font-size: 15px;
+  background-color: rgb(37, 211, 102);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 0px 10px;
+  order: 1;
+  opacity: 0;
+  left: -90px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.whats-app img {
   width: 50px;
   height: 50px;
+}
+
+.whats-app:hover .msg {
+  left: -150px;
+  top: 23%;
+  opacity: 1;
+  transition: all 0.5s;
+  visibility: visible;
 }
 
 .whats-app img:hover {
@@ -352,7 +414,7 @@ body {
 .section-between-text p {
   font-weight: bold;
   font-size: 35px;
-  line-height: 53px;
+  line-height: 50px;
   text-align: center;
   font-feature-settings: "tnum" on, "lnum" on;
   color: #000000;
@@ -362,6 +424,21 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+
+.section-between-text a {
+  color: black;
+  font-weight: 800;
+  font-size: 35px;
+  cursor: pointer;
+  margin: 12px 0;
+  line-height: 50px;
+  text-decoration: underline;
+}
+
+.section-between-text a:hover { 
+opacity: 0.8;
 }
 
 /* learn english throught football */
@@ -397,26 +474,33 @@ body {
 }
 
 .text-side h2 {
-  font-size: 40px;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 12px 0;
-  line-height: 60px;
+  font-size: 50px;
+  text-align: left;
+  font-weight: bolder;
+  margin-top: 12px;
+  line-height: 50px;
+  margin-bottom: 0 !important;
+}
+
+.about-us-page .text-side h2 {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 50px;
 }
 
 .text-side p {
   font-size: 24px;
-  line-height: 40px;
-  text-align: center;
+  line-height: 30px;
   font-weight: 500;
   margin: 12px 0;
+  text-align: justify;
 }
 
 .text-side a {
   text-decoration-line: underline;
   color: #ffffff;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
   margin: 12px 0;
 }
@@ -431,6 +515,11 @@ body {
   margin: auto;
 }
 
+
+.online {
+  font-size: 80px !important;
+  color: white;
+}
 /* football tour */
 
 /* footer */
@@ -462,12 +551,12 @@ body {
   font-size: 8px;
 }
 
-.barcodes img{
+.barcodes img {
   width: 100%;
 }
 
 .barcodes img:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
 
 .home-hero {
@@ -484,7 +573,7 @@ body {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translate(-21%, 5%);
+  transform: translate(-30%, 3%);
 }
 
 .home-whats {
@@ -539,7 +628,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 45px;
   color: #ffffff;
 }
 
@@ -595,9 +684,13 @@ body {
 }
 
 .experimental-trip,
-.football-trip  {
+.football-trip {
   text-align: left;
   background-color: #aad9fe;
+}
+
+.experimental-trip {
+  flex-direction: row-reverse;
 }
 
 .experimental-trip .text-side h3 {
@@ -623,6 +716,10 @@ body {
   flex-direction: row-reverse;
 }
 
+.top-level button {
+  background-color: black !important;
+}
+
 .football-team .text-side {
   padding: 123px 90px;
 }
@@ -643,13 +740,14 @@ body {
   flex-direction: row-reverse;
 }
 
-
 .online-english {
   background: #5eca7e;
 }
 
 .online-english .text-side h1 {
-  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 50px;
 }
 
 .online-english .image-side img {
@@ -659,23 +757,24 @@ body {
 
 .online-english .text-side p {
   font-weight: bold;
+  font-weight: 900;
 }
 
 .online-english .text-side button {
-  padding: 16px 24px;
+  padding: 12px 20px;
   border-radius: 8px;
-  width: 50%;
-border: none;
-cursor: pointer;
-font-weight: bold;
-font-size: 20px;
-/* line-height: 144.4%; */
-color: #ffffff;
-background: #e95959;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  /* line-height: 144.4%; */
+  color: #ffffff;
+  background: #e95959;
 }
 
 .online-english .text-side button:hover {
-opacity: 0.9;
+  opacity: 0.9;
 }
 
 .contactus-now {
@@ -690,15 +789,14 @@ opacity: 0.9;
 }
 
 .contactus-now .button-container button {
-  font-size: 30px;
-  padding: 12px 24px;
+  font-size: 20px;
+  padding: 12px 20px;
   white-space: nowrap;
 }
 
 .contactus-now .button-container button:hover {
   opacity: 0.7;
 }
-
 
 .about-us-page,
 .football-tour .text-side {
@@ -710,7 +808,7 @@ opacity: 0.9;
 }
 
 .why-choose-us {
-  background: #f7f9fb;
+  background: #aad9fe;
   width: 100%;
 }
 
@@ -724,6 +822,10 @@ opacity: 0.9;
 
 .why-choose-us h1 span {
   margin: 0 12px;
+}
+
+.tour-background {
+  background-color: white !important;
 }
 
 /* .why-choose-us h1 hr {
@@ -755,7 +857,7 @@ opacity: 0.9;
 }
 
 .advantage:hover {
-  background: #5ECA7F;;
+  background: #5eca7f;
 }
 
 .advantage img {
@@ -769,7 +871,7 @@ opacity: 0.9;
 }
 
 .start-game h1 {
-  padding: 38px 12px;
+  padding: 38px 200px;
   font-size: 40px;
 }
 
@@ -781,10 +883,13 @@ opacity: 0.9;
 }
 
 .summer-camp-page {
- background: #72d08f;
+  background: #72d08f;
 }
 
 .summer-camp-page .text-side {
+  text-align: center;
+}
+.summer-camp-page .text-side h2 {
   text-align: center;
 }
 
@@ -807,7 +912,7 @@ opacity: 0.9;
   width: fit-content;
   border-radius: 10px;
   height: unset;
-  padding: 16px 48px;
+  /* padding: 16px 48px; */
 }
 
 .section-between-text .button-container button:hover {
@@ -825,13 +930,13 @@ opacity: 0.9;
 .top-level .text-side p {
   font-size: 45px;
   font-weight: 700;
-  line-height: 54px;
+  line-height: 30px;
   /* padding: 68px; */
   text-align: left;
 }
 
 .about-us-page .text-side h2 {
-  text-align: center;
+  text-align: left;
 }
 
 .contact-us-heading {
@@ -888,7 +993,7 @@ opacity: 0.9;
 }
 
 .step-item p {
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .choose-content {
@@ -898,6 +1003,27 @@ opacity: 0.9;
 .choose-content img {
   width: 100%;
   max-width: 100%;
+}
+
+.coral {
+  color: #e95959 !important;
+}
+
+.black {
+  color: black !important;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @media screen and (max-width: 992px) {
@@ -911,6 +1037,7 @@ opacity: 0.9;
 
   .mobile-menu {
     display: block;
+    color: white;
   }
 
   .nav-options {
@@ -929,7 +1056,7 @@ opacity: 0.9;
   }
 
   .nav-options.active {
-    background: #c1eafc;;
+    background: #c1eafc;
     top: 60px;
     opacity: 1;
     transition: all 0.5s ease;
@@ -957,18 +1084,22 @@ opacity: 0.9;
   }
 
   .text-side h2 {
-    font-size: 30px;
-    line-height: 46px;
+    font-size: 35px;
+    line-height: 50px;
     text-align: center;
   }
 
   .text-side p {
     font-size: 25px !important;
-    line-height: 35px;
+    line-height: 30px;
   }
 
   .text-side a {
     font-size: 24px;
+  }
+
+  .social-item li a {
+    font-size: 20px;
   }
 
   /* .whats-app {
@@ -1014,6 +1145,7 @@ opacity: 0.9;
   .hero .home-text,
   .hero .text-side {
     margin-top: 100px;
+    background: rgb(255 255 255 / 30%);
   }
 
   .experimental-trip .text-side,
@@ -1022,7 +1154,7 @@ opacity: 0.9;
     /* padding: 150px 40px; */
   }
 
-  .whats-app img{
+  .whats-app img {
     width: 70px;
     height: 70px;
   }
@@ -1053,6 +1185,12 @@ opacity: 0.9;
     height: auto;
   }
 
+  .footer {
+
+    padding: 35px 0px;
+
+  }
+
   .social-item li {
     margin: 0px;
     padding: 8px 0px;
@@ -1066,6 +1204,15 @@ opacity: 0.9;
     /* height: 63vh; */
   }
 
+  .advantage-new {
+    width: auto;
+  }
+
+  .advantage-new h3 {
+    font-size: 20px;
+    font-style: bold;
+  }
+
   .image-side,
   .text-side {
     width: 100%;
@@ -1074,7 +1221,7 @@ opacity: 0.9;
   }
 
   .text-side a {
-    line-height: 48px;
+    line-height: 45px;
     text-align: center;
     font-size: 30px;
   }
@@ -1106,9 +1253,19 @@ opacity: 0.9;
     margin-top: 16px;
     transform: unset;
   }
+
+  .start-game h1 {
+    padding: 38px 10px;
+    font-size: 40px;
+  }
+
+  .online {
+    font-size: 80px !important;
+    color: white;
+  }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .home-whats {
     padding: 20px !important;
   }
@@ -1133,6 +1290,19 @@ opacity: 0.9;
     white-space: unset;
   }
 
+  .ground-section .ground-text {
+ 
+    width: 100%;
+  }
+
+  .online {
+    font-size: 80px !important;
+    color: white;
+  }
+
+  .section-between-text p {
+    padding: 0 10px;
+  }
   /* .image-side img {
     height: 55vh;
   } */
@@ -1164,7 +1334,7 @@ opacity: 0.9;
 
   .advantage p {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
   }
 
   .text-image-container {
