@@ -128,6 +128,8 @@ button {
 .hero {
   height: 100vh;
 }
+
+
 .mobile-menu {
   width: 40px;
   z-index: 11;
@@ -252,12 +254,19 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-position: 50% 5%;
+  object-fit: cover;
   padding: 48px 80px;
   display: flex;
   flex-direction: column;
   align-items: end;
   position: relative;
 }
+
+.home-section img {
+
+}
+
 
 .ground-section {
   height: 600px;
@@ -347,9 +356,10 @@ button {
   font-weight: bold;
   font-size: 60px;
   /* line-height: 144.4%; */
-  color: #000000;
+  color: white;
   margin: 0;
   text-align: end;
+  /* background-color: rgba(243, 243, 243, 0.404); */
 }
 
 .home-val-text {
@@ -438,7 +448,8 @@ button {
 }
 
 .section-between-text a:hover { 
-opacity: 0.8;
+/* opacity: 0.8; */
+color: #e95959;
 }
 
 /* learn english throught football */
@@ -456,11 +467,15 @@ opacity: 0.8;
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  background-position: 50% 5%;
 }
 
 .image-side img {
   width: 100%;
   object-fit: cover;
+  background-color: #aad9fe;
+  background-position: 50% 5%;
+  
 }
 
 .text-side {
@@ -633,11 +648,11 @@ opacity: 0.8;
 }
 
 .social-item li a:hover {
-  color: grey;
+  color: #e95959 !important
 }
 
 .social-link li a svg:hover {
-  fill: grey;
+  fill: #e95959 !important
 }
 
 .footer-hori {
@@ -818,7 +833,7 @@ opacity: 0.8;
 
 .why-choose-us h1 {
   text-align: center;
-  padding: 50px 0;
+  padding: 20px 0;
   font-size: 40px;
   display: flex;
   justify-content: center;
@@ -850,7 +865,7 @@ opacity: 0.8;
   max-width: 350px;
   background: #ffffff;
   box-sizing: border-box;
-  padding: 13px;
+  padding: 20px;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;

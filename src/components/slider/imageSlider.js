@@ -2,12 +2,13 @@ import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 
-import img1 from "../../statics/images/ground.png"
-import img2 from "../../statics/images/football-ground.png"
-import img3 from "../../statics/images/camp.png"
-import img4 from "../../statics/images/football-team.png"
-import img5 from "../../statics/images/see-img.png"
+import img1 from "../../statics/images/slider1.jpg"
+import img2 from "../../statics/images/slider2.jpg"
+import img3 from "../../statics/images/slider3.jpg"
+import img4 from "../../statics/images/slider4.jpg"
+import img5 from "../../statics/images/slider5.jpg"
 import homeBg from "../../statics/images/home-background.png"
+import hero1 from "../../statics/images/little-boy.jpg"
 
 const SLIDERIMG = [
   {
@@ -39,25 +40,25 @@ const SLIDERIMG = [
 
 const HOME_SLIDERIMG = [
   {
-    text_h2: "summer_football_camps",
-    text_h1: "in_english",
-    text_span1: "valencia",
-    text_span2: "jan_july_2020",
-    image: homeBg,
+    // text_h2: "summer_football_camps",
+    text_h1: "hero1",
+    // text_span1: "hero11",
+    text_span2: "hero11",
+    image: hero1,
   },
   {
-    text_h2: "summer_football_camps",
-    text_h1: "in_spanish",
-    text_span1: "valencia",
-    text_span2: "july_sep_2020",
+    // text_h2: "summer_football_camps",
+    text_h1: "hero2",
+    // text_span1: "valencia",
+    text_span2: "hero12",
     image: img2,
   },
   {
-    text_h2: "summer_football_camps",
-    text_h1: "in_spanish",
-    text_span1: "valencia",
-    text_span2: "july_sep_2020",
-    image: img5,
+    // text_h2: "summer_football_camps",
+    text_h1: "hero3",
+    // text_span1: "valencia",
+    text_span2: "hero13",
+    image: homeBg,
   },
 ]
 
@@ -81,7 +82,7 @@ function ImageSlider({ t, Hero }) {
               <div className="home-text">
                 <h2>{t(item.text_h2)}</h2>
                 <h1>{t(item.text_h1)}</h1>
-                <span className="home-val-text">{t(item.text_span1)}, </span>
+                <span className="home-val-text">{t(item.text_span1)} </span>
                 <span className="home-text-date">{t(item.text_span2)}</span>
               </div>
             </div>

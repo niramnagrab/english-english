@@ -4,9 +4,10 @@ import TextImageContainer from "../../components/sections/textImageContainer"
 import Testimonials from "../../components/slider/testimonials"
 
 import whatsapp from "../../statics/images/whatsapp.png"
-import learnByFootball from "../../statics/images/learn-through-football.png"
-import footBallTour from "../../statics/images/football-tour.png"
+import learnByFootball from "../../statics/images/contact2.png"
+import footBallTour from "../../statics/images/football-ground.png"
 import camp from "../../statics/images/camp.png"
+import heroBottom from "../../statics/images/kid-football.jpg"
 import Button from "../../layout/buttons"
 import { Link } from 'react-router-dom'
 
@@ -58,7 +59,7 @@ function Home({ t }) {
 
       <TextImageContainer
         t={t}
-        image={footBallTour}
+        image={heroBottom}
         className="football-tour football-coach"
       >
         <h2 className="black">{t("football_coaching_text_h2")}</h2>

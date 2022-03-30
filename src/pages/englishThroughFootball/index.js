@@ -3,7 +3,7 @@ import TextImageContainer from "../../components/sections/textImageContainer"
 import WhyChooseUs from "../../components/sections/whyChooseUs"
 import Steps from "../../components/sections/steps"
 
-import learnByFootball from "../../statics/images/learn-through-football.png"
+import learnByFootball from "../../statics/images/joely.png"
 import onlineEnglish from "../../statics/images/online-english.png"
 import contact2 from "../../statics/images/contact2.png"
 

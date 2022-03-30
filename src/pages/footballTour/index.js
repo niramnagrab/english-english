@@ -3,7 +3,7 @@ import TextImageContainer from "../../components/sections/textImageContainer"
 import InCludedInTour from "../../components/sections/includedInTour"
 
 import footballGround from "../../statics/images/football-ground.png"
-import footballTeam from "../../statics/images/football-team.png"
+import footballTeam from "../../statics/images/kids-training.jpg"
 import ImageSlider from "../../components/slider/imageSlider"
 
 function FootballTour({ t }) {
@@ -20,7 +20,7 @@ function FootballTour({ t }) {
       <div class="section-between-text">
         <p>
           {t("We_specialise_in_tours_in")}{" "}
-          <span className="text-red">{t("valencia")}</span> {t("and_the")}{" "}
+          <span className="text-red">{t("spain")}</span> {t("and_the")}{" "}
           <span className="text-red"> UK</span>
         </p>
       </div>
