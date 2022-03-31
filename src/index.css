@@ -1009,6 +1009,7 @@ opacity: 0.8;
 
 .step-item h2 {
   /* line-height: 48px; */
+  padding-bottom: 0;
 }
 
 .step-item p {
@@ -1137,7 +1138,7 @@ input[type=number] {
   } */
 
   .section-between-text {
-    padding: 0;
+    padding: 50px 0;
     margin-bottom: 20px;
   }
 }
@@ -1313,7 +1314,7 @@ input[type=number] {
   }
 
   .text-side {
-    padding: 20px;
+    padding: 50px 20px;
   }
   .text-side p {
     padding: 0;

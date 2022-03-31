@@ -9,6 +9,7 @@ import img4 from "../../statics/images/slider4.jpg"
 import img5 from "../../statics/images/slider5.jpg"
 import homeBg from "../../statics/images/home-background.png"
 import hero1 from "../../statics/images/little-boy.jpg"
+import heroHome2 from "../../statics/images/football-ground.png"
 
 const SLIDERIMG = [
   {
@@ -51,7 +52,7 @@ const HOME_SLIDERIMG = [
     text_h1: "hero2",
     // text_span1: "valencia",
     text_span2: "hero12",
-    image: img2,
+    image: heroHome2,
   },
   {
     // text_h2: "summer_football_camps",
