@@ -3,7 +3,6 @@ import HomeSection from "../../components/sections/homeSection"
 import TextImageContainer from "../../components/sections/textImageContainer"
 import Testimonials from "../../components/slider/testimonials"
 
-import whatsapp from "../../statics/images/whatsapp.png"
 import learnByFootball from "../../statics/images/contact2.png"
 import footBallTour from "../../statics/images/football-ground.png"
 import camp from "../../statics/images/camp.png"

@@ -71,7 +71,7 @@ function ImageSlider({ t, Hero }) {
       showThumbs={false}
       showStatus={false}
       dots={true}
-      autoPlay={true}
+      autoPlay={false}
       interval={2000}
     >
       {Hero
