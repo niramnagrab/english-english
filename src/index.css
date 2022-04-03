@@ -196,6 +196,10 @@ button {
   margin-left: 12px;
 }
 
+#showMessage {
+  font-size: 16px;
+}
+
 /* -----------------------home ---------------- */
 
 .home {
@@ -211,7 +215,7 @@ button {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  padding: 15px 35px;
+  padding: 0px 35px;
   margin-bottom: -116px;
   margin-right: -35px;
 }
@@ -587,7 +591,7 @@ color: #e95959;
 .home-hero .contact-us-container {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 46%;
   transform: translate(-30%, 3%);
 }
 
