@@ -9,8 +9,8 @@ function HomeSection({ t }) {
       <ImageSlider t={t} Hero />
       <ContactUsForm 
       t={t}
-      heading="reserve_your_space_now" 
-      buttonText="Send your details"
+      heading="Name" 
+      buttonText="Phone number"
       />
 
 

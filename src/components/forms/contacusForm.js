@@ -14,7 +14,7 @@ function ContactUs({ t, heading, buttonText }) {
   return (
     <form className="contact-us-container" onSubmit={(e) => showMessage(e)}>
 
-<p>{t(heading)}</p>
+<p>{t('reserve_your_space_now')}</p>
        <input
                   type="text"
                   className="input"
