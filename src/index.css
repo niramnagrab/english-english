@@ -1332,6 +1332,10 @@ input[type=number] {
     white-space: unset;
   }
 
+  .step-item p {
+padding: 0px 10px;
+  }
+
   .ground-section .ground-text {
  
     width: 100%;
@@ -1345,9 +1349,10 @@ input[type=number] {
   .section-between-text p {
     padding: 0 10px;
   }
-  /* .image-side img {
-    height: 55vh;
-  } */
+
+  .image-side img {
+    height: 400px !important;
+  }
 
   .top-level .text-side p {
     text-align: center !important;
@@ -1393,6 +1398,10 @@ input[type=number] {
 
   .summer-camp-page .text-side p {
     text-align: center;
+  }
+
+  .advantage-contaner  {
+    flex-direction: column;
   }
 }
 
