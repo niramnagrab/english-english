@@ -99,7 +99,7 @@
   "name":"Name",
   "emailabc":"Email",
   "phone":"Phone Number",
-  "first_name": "Student Name",
+  "first_name": "Name",
   "subscriber_email": "Email Address", 
   "subscriber_number": "Phone Number"
 }
