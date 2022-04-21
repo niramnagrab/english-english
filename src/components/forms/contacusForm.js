@@ -5,7 +5,7 @@ function ContactUs({ t, heading, buttonText }) {
 
   const showMessage = (e) => {
     e.preventDefault()
-    document.getElementById('Name').value = ''
+    document.getElementById('FirstName').value = ''
     document.getElementById('Email').value = ''
     document.getElementById('Phone').value = ''
     document.getElementById('showMessage').innerHTML = t("registration_message")
@@ -19,9 +19,9 @@ function ContactUs({ t, heading, buttonText }) {
                   type="text"
                   className="input"
                   required
-                  id="Name"
-                  name="Name"
-                  placeholder={t('subscriber_name')}
+                  id="FirstName"
+                  name="FirstName"
+                  placeholder={t('first_name')}
                 />
 
                 <input
