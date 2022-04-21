@@ -5,23 +5,22 @@ function ContactUs({ t, heading, buttonText }) {
 
   const showMessage = (e) => {
     e.preventDefault()
-    document.getElementById('Bene').value = ''
+    document.getElementById('Name').value = ''
     document.getElementById('Email').value = ''
-    document.getElementById('WeChatId').value = ''
+    document.getElementById('Phone').value = ''
     document.getElementById('showMessage').innerHTML = t("registration_message")
   }
 
   return (
     <form className="contact-us-container" onSubmit={(e) => showMessage(e)}>
-
-<p>{t('reserve_your_space_now')}</p>
+  <p>{t('reserve_your_space_now')}</p>
       
        <input
                   type="text"
                   className="input"
                   required
-                  id="Bene"
-                  name="Bene"
+                  id="Name"
+                  name="Name"
                   placeholder={t('subscriber_name')}
                 />
 
@@ -39,8 +38,8 @@ function ContactUs({ t, heading, buttonText }) {
                   type="number"
                   className="input"
                   required
-                  id="WeChatId"
-                  name="WeChatId"
+                  id="Phone"
+                  name="Phone"
                   placeholder={t('subscriber_number')}
                 />
 
