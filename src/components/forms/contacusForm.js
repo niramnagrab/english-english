@@ -15,6 +15,7 @@ function ContactUs({ t, heading, buttonText }) {
     <form className="contact-us-container" onSubmit={(e) => showMessage(e)}>
 
 <p>{t('reserve_your_space_now')}</p>
+      
        <input
                   type="text"
                   className="input"
@@ -23,6 +24,7 @@ function ContactUs({ t, heading, buttonText }) {
                   name="Bene"
                   placeholder={t('subscriber_name')}
                 />
+
                 <input
                   type="email"
                   className="input"
@@ -31,7 +33,9 @@ function ContactUs({ t, heading, buttonText }) {
                   name="Email"
                   placeholder={t('subscriber_email')}
                 />
+
                 <input
+                minlength="6" 
                   type="number"
                   className="input"
                   required
@@ -39,6 +43,7 @@ function ContactUs({ t, heading, buttonText }) {
                   name="WeChatId"
                   placeholder={t('subscriber_number')}
                 />
+
                 <div className="button-container">
                 <button className="button" aria-label="Trial Class">
                   {t('req_free_trail')}
