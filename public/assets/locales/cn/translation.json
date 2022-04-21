@@ -98,5 +98,8 @@
   "We_take_care_organising_trip":"We take care of organising your trip",
   "name":"Name",
   "emailabc":"Email",
-  "phone":"Phone Number"
+  "phone":"Phone Number",
+  "subscriber_name": "Student Name",
+  "subscriber_email": "Email Address", 
+  "subscriber_number": "Phone Number"
 }
