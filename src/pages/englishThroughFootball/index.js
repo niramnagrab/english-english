@@ -2,10 +2,12 @@ import React from "react"
 import TextImageContainer from "../../components/sections/textImageContainer"
 import WhyChooseUs from "../../components/sections/whyChooseUs"
 import Steps from "../../components/sections/steps"
-
 import learnByFootball from "../../statics/images/joely.png"
 import onlineEnglish from "../../statics/images/online-english.png"
 import contact2 from "../../statics/images/contact2.png"
+import { Link } from "react-router-dom"
+
+
 
 function EnglishThroughFootball({ t }) {
   return (
@@ -18,7 +20,9 @@ function EnglishThroughFootball({ t }) {
         <h1>{t("learn_english_online")}</h1>
         <p id="online">{t("learn_english_online_2")}</p>
         <p>{t("online_english_text")}</p>
-        <button>{t("free_demo_class")}</button>
+        <Link to="/about" >  <button>{t("free_demo_class")}</button>   </Link>
+
+
       </TextImageContainer>
       <div class="section-between-text">
         <p>
@@ -30,7 +34,7 @@ function EnglishThroughFootball({ t }) {
         image={learnByFootball}
         className="contactus-now"
         image2={contact2}
-        button={t('contact_us_now')}
+        button={t('contact_us_now')} 
       />
       <div class="section-between-text">
         <p>

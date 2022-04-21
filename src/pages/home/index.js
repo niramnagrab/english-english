@@ -25,12 +25,12 @@ function Home({ t }) {
       >
         <h2>{t("learn_english_through_football")}</h2>
         <p>{t("online_english_classes_delevered")}</p>
-        <a>{t("learn_more")}</a>
+        <Link to="learn"> <a>{t("learn_more")}</a> </Link>
       </TextImageContainer>
 
       <div class="section-between-text courses">
         <h2 class="text-content">
-              <Link to="learn" href="#">{t("online_classes")} </Link>
+              <Link to="learn">{t("online_classes")} </Link>
               <Link to="summer-camp"><span>{t("summer_camps")}</span></Link>
               <Link to="tour"><span>{t("football_tours")}</span></Link>
         </h2>
@@ -39,7 +39,7 @@ function Home({ t }) {
       <TextImageContainer t={t} image={footBallTour} className="football-tour">
         <h2>{t("we_plan_your_football_tour")}</h2>
         <p>{t("football_tour_text")}</p>
-        <Button buttonText={t("request_digital_brochure")} />
+        <a href="https://spsportsacademy-25725429.hubspotpagebuilder.eu/sp-sports-academy-tour-dates"><Button buttonText={t("request_digital_brochure")} /></a>
       </TextImageContainer>
 
       <div class="section-between-text">
@@ -49,7 +49,7 @@ function Home({ t }) {
       <TextImageContainer t={t} image={camp} className="summer-camp">
         <h2>{t("summer_camp_text_h2")}</h2>
         <p>{t("summer_camp_text")}</p>
-        <a>{t("check_dates")}</a>
+        <a href="https://spsportsacademy-25725429.hubspotpagebuilder.eu/sp-sports-academy-tour-dates">{t("check_dates")}</a>
       </TextImageContainer>
 
       <div class="section-between-text">

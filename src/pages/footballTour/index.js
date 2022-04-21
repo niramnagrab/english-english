@@ -26,7 +26,8 @@ function FootballTour({ t }) {
       </div>
       <TextImageContainer t={t} image={footballTeam} className="football-team">
         <h2>
-          <a>{t("click_here")}</a> {t("football_team_text")}
+          
+          <a href="https://spsportsacademy-25725429.hubspotpagebuilder.eu/sp-sports-academy-tour-dates">{t("click_here")}</a> {t("football_team_text")}
         </h2>
       </TextImageContainer>
       <div class="section-between-text">

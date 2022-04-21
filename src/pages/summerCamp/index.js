@@ -5,6 +5,9 @@ import footallTour from "../../statics/images/football-coach.jpg"
 import Seeimg from "../../statics/images/see-img.png"
 import camp from "../../statics/images/camp.png"
 import Button from "../../layout/buttons"
+import { Link } from "react-router-dom"
+
+
 
 function SummerCamp({ t }) {
   return (
@@ -23,13 +26,15 @@ function SummerCamp({ t }) {
           <span class="text-white">{t("2022_registration")}</span> <br />
           {t("open_now")}!
         </p>
-        <Button buttonText={t("reserve_your_space")} />
+        <a href="https://spsportsacademy-25725429.hubspotpagebuilder.eu/sp-sports-academy-tour-dates"> <Button buttonText={t("reserve_your_space")} /> </a>
+        
       </TextImageContainer>
       <div class="section-between-text">
         <p>
           {t("summer_camps_for_children")}
           <span className="text-red"> {t("valencia")}</span> <br />
-          {t("sign_up_now_spaces_limited")}
+          <a href="https://spsportsacademy-25725429.hubspotpagebuilder.eu/sp-sports-academy-tour-dates">  {t("sign_up_now_spaces_limited")} </a>
+
         </p>
         <Button buttonText={t("reserve_your_space_now")} />
       </div>
@@ -38,7 +43,8 @@ function SummerCamp({ t }) {
           {t("enjoy_top_level_Coaching")}
       
         </h2>
-        <Button buttonText={t("check_dates")} />
+        
+       <a href="https://spsportsacademy-25725429.hubspotpagebuilder.eu/sp-sports-academy-tour-dates">   <Button buttonText={t("check_dates")} /> </a>
       </TextImageContainer>
       <div class="section-between-text">
         <p>
