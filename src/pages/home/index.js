@@ -11,6 +11,7 @@ import Button from "../../layout/buttons"
 import { Link } from 'react-router-dom'
 
 
+
 function Home({ t }) {
   return (
     <div className="home">

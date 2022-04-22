@@ -83,7 +83,7 @@ function Header({ t }) {
               </li>
             ))}
           </ul>
-          <LanguageSelector />
+          {/* <LanguageSelector /> */}
         </div>
         <div className="mobile-menu" onClick={handleToggle}>
           {toggle ? <WindowClose /> : <ThreeBars />}

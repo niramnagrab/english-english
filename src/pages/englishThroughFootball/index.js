@@ -4,6 +4,7 @@ import WhyChooseUs from "../../components/sections/whyChooseUs"
 import Steps from "../../components/sections/steps"
 import learnByFootball from "../../statics/images/joely.png"
 import onlineEnglish from "../../statics/images/online-english.png"
+import heroLearn from "../../statics/images/little-boy.jpg"
 import contact2 from "../../statics/images/contact2.png"
 import { Link } from "react-router-dom"
 
@@ -14,7 +15,7 @@ function EnglishThroughFootball({ t }) {
     <div className="home">
       <TextImageContainer
         t={t}
-        image={onlineEnglish}
+        image={heroLearn}
         className="hero online-english"
       >
         <h1>{t("learn_english_online")}</h1>
