@@ -9,7 +9,7 @@ h1 {
 }
 h3 {
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -73,7 +73,7 @@ button {
 
 .nav-container ul li {
   list-style: none;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 25px;
   padding-right: 24px;
   font-weight: 700;
@@ -224,7 +224,7 @@ button {
   width: 100%;
   margin: auto;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   /* line-height: 144.4%; */
   text-align: left;
   color: #000000;
@@ -236,14 +236,14 @@ button {
 }
 
 .button-container button {
-  padding: 12px 20px;
+  padding: 12px 30px;
   border: none;
   cursor: pointer;
   border-radius: 8px;
   /* width: 75%; */
   font-weight: bold;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 30px;
   /* line-height: 144.4%; */
   color: #ffffff;
   background: #e95959;
@@ -273,7 +273,7 @@ button {
 
 
 .ground-section {
-  height: 600px;
+  height: 800px;
   position: relative;
 }
 
@@ -427,7 +427,7 @@ button {
 
 .section-between-text p {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 50px;
   text-align: center;
   font-feature-settings: "tnum" on, "lnum" on;
@@ -508,7 +508,7 @@ color: #e95959;
 }
 
 .text-side p {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 30px;
   font-weight: 500;
   margin: 12px 0;
@@ -646,7 +646,7 @@ color: #e95959;
   text-decoration: none;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 45px;
   color: #ffffff;
 }
@@ -774,8 +774,9 @@ opacity: 0.8;
 }
 
 .online-english .image-side img {
-  height: fit-content;
+  /* height: fit-content; */
   align-self: flex-end;
+  height: 100%;
 }
 
 .online-english .text-side p {
@@ -790,7 +791,7 @@ opacity: 0.8;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   /* line-height: 144.4%; */
   color: #ffffff;
   background: #e95959;
@@ -812,7 +813,7 @@ opacity: 0.8;
 }
 
 .contactus-now .button-container button {
-  font-size: 20px;
+  font-size: 30px;
   padding: 12px 20px;
   white-space: nowrap;
 }
@@ -838,7 +839,7 @@ opacity: 0.8;
 .why-choose-us h1 {
   text-align: center;
   padding: 20px 0;
-  font-size: 40px;
+  font-size: 45px;
   display: flex;
   justify-content: center;
 }
@@ -1121,7 +1122,7 @@ input[type=number] {
   }
 
   .text-side p {
-    font-size: 25px !important;
+    font-size: 28px !important;
     line-height: 30px;
   }
 
@@ -1175,7 +1176,8 @@ input[type=number] {
 
   .hero .home-text,
   .hero .text-side {
-    /* margin-top: 50px; */
+    margin-top: 50px;
+    padding-bottom: 30px;
     /* background: rgb(255 255 255 / 30%); */
   }
 
@@ -1298,7 +1300,7 @@ input[type=number] {
 
   .start-game h1 {
     padding: 38px 10px;
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .online {
@@ -1368,7 +1370,8 @@ padding: 0px 10px;
   }
 
   .online-english .text-side button {
-    width: 80%;
+    /* width: 80%; */
+    font-size: 30px;
   }
 
   .online-english .text-side p {
