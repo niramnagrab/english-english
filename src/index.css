@@ -243,7 +243,7 @@ button {
   /* width: 75%; */
   font-weight: bold;
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 25px !important;
   /* line-height: 144.4%; */
   color: #ffffff;
   background: #e95959;
@@ -519,7 +519,7 @@ color: #e95959;
   text-decoration-line: underline;
   color: #ffffff;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 25px;
   cursor: pointer;
   margin: 12px 0;
 }
@@ -791,7 +791,7 @@ opacity: 0.8;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   /* line-height: 144.4%; */
   color: #ffffff;
   background: #e95959;
@@ -813,7 +813,7 @@ opacity: 0.8;
 }
 
 .contactus-now .button-container button {
-  font-size: 30px;
+  font-size: 25px;
   padding: 12px 20px;
   white-space: nowrap;
 }
@@ -1127,7 +1127,7 @@ input[type=number] {
   }
 
   .text-side a {
-    font-size: 24px;
+    font-size: 25px;
   }
 
   .social-item li a {
@@ -1267,7 +1267,7 @@ input[type=number] {
   .text-side a {
     line-height: 45px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .text-side {
@@ -1371,7 +1371,7 @@ padding: 0px 10px;
 
   .online-english .text-side button {
     /* width: 80%; */
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .online-english .text-side p {
